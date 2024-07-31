@@ -53,8 +53,8 @@ defmodule PrometheusPlugs.Mixfile do
     [
       {:accept, "~> 0.1"},
       {:plug, "~> 1.0"},
-      {:prometheus_ex, "~> 1.1 or ~> 2.0 or ~> 3.0"},
-      {:prometheus_process_collector, "~> 1.1", optional: true},
+      {:prometheus_ex, "~> 1.1 or ~> 2.0 or ~> 3.1"},
+      {:prometheus_process_collector, git: "https://github.com/duffelhq/prometheus_process_collector.git",  ref: "f8cfc7e47692ccf5348fd3282e9a887310fda7ee", optional: true},
 
       {:earmark, ">= 0.0.0", only: :dev},
       {:ex_doc, ">= 0.0.0", only: :dev}
